@@ -1,8 +1,15 @@
 import * as React from 'react';
+import { hot } from 'react-hot-loader/root';
 
 
-export function MainWindow (props: {}) {
+function MainWindow (props: {}) {
   return (
     <h1>Hello, world!</h1>
   );
 }
+
+
+const HotMainWindow = hot(MainWindow);
+
+
+export { HotMainWindow as MainWindow };
