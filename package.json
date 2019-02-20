@@ -5,7 +5,7 @@
   "author": "Wei-Cheng Pan <legnaleurc@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/html/index.html",
+    "start": "parcel serve --no-autoinstall src/html/index.html",
     "build": "parcel build src/html/index.html"
   },
   "devDependencies": {
