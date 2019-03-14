@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { hot } from 'react-hot-loader';
 
 
-export function MainWindow (props: {}): JSX.Element {
+function MainWindow (props: {}): JSX.Element {
   return (
     <>
       <h1>Hello, world!</h1>
@@ -51,3 +52,8 @@ function FunctionComponent (props: {}): JSX.Element {
     </button>
   );
 }
+
+
+const Hot = hot(module)(MainWindow);
+
+export { Hot as MainWindow };
